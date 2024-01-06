@@ -16,6 +16,7 @@ func (app *application) routes() http.Handler {
 	mux.Use(app.recoverPanic)
 
 	mux.HandleFunc("/status", app.status).Methods("GET")
+	mux.HandleFunc("/test/stream", app.testStream).Methods("GET")
 
 	return mux
 }

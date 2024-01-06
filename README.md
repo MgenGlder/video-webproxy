@@ -11,6 +11,7 @@ $ go mod tidy
 $ go run ./cmd/api
 ```
 
+
 If you make a request to the `GET /status` endpoint using `curl` you should get a response like this:
 
 ```
